@@ -16,7 +16,7 @@ static char THIS_FILE[] = __FILE__;
 
 
 CToolWindow::CToolWindow(CWnd* pParent /*=NULL*/)
-	: CDialog(CToolWindow::IDD, pParent)
+	//: CDialog(CToolWindow::IDD, pParent)
 {
 	//{{AFX_DATA_INIT(CToolWindow)
 		// NOTE: the ClassWizard will add member initialization here
@@ -35,7 +35,7 @@ void CToolWindow::DoDataExchange(CDataExchange* pDX)
 
 BEGIN_MESSAGE_MAP(CToolWindow, CDialog)
 	//{{AFX_MSG_MAP(CToolWindow)
-	ON_BN_CLICKED(IDC_BUTTON1, OnButton_Road)
+	//ON_BN_CLICKED(IDC_BUTTON1, OnButton_Road)
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 

@@ -200,7 +200,7 @@ ERC CGrid::SetObjectAtCell(long x, long y, CCityObj* pObj)
 						bDraw = false;
 					}
 
-					for(j = 0; j<= pObj->GetDim1() - 1; j++)
+					for(UINT j = 0; j<= pObj->GetDim1() - 1; j++)
 						pTempCell = pTempCell->pLeftCell;
 
 					pTempCell = pTempCell->pBottomCell;
@@ -462,7 +462,7 @@ zone_t* CGrid::InsertZone(long x, long y, DWORD dwZoneType)
 			pTemplist->pNext = pNewList;
 			pNewList->pZone->x = x;
 			pNewList->pZone->y = y;
-			pNewList->pZone->zone_type = dwZoneType;
+			pNewList->pZone->zone_type = dwZoneType;			
 			return pNewList->pZone;
 		}
 	}

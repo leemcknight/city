@@ -28,6 +28,7 @@ public:
 	//{{AFX_VIRTUAL(CToolWindow)
 	protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
+	afx_msg void OnButton_Road();
 	//}}AFX_VIRTUAL
 	
 

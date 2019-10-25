@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>City</ProjectName>
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{122EEDF3-47E1-45E3-BF1D-46D103362FAA}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Building.cpp" />
+    <ClCompile Include="City.cpp" />
+    <ClCompile Include="CityDate.cpp" />
+    <ClCompile Include="CityDoc.cpp" />
+    <ClCompile Include="CityGenericItem.cpp" />
+    <ClCompile Include="CityManager.cpp" />
+    <ClCompile Include="CityObj.cpp" />
+    <ClCompile Include="CityView.cpp" />
+    <ClCompile Include="City_Econ.cpp" />
+    <ClCompile Include="Grid.cpp" />
+    <ClCompile Include="GridCell.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="StdAfx.cpp" />
+    <ClCompile Include="ToolBox.cpp" />
+    <ClCompile Include="ToolWindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Building.h" />
+    <ClInclude Include="City.h" />
+    <ClInclude Include="CityDate.h" />
+    <ClInclude Include="CityDoc.h" />
+    <ClInclude Include="CityGenericItem.h" />
+    <ClInclude Include="CityManager.h" />
+    <ClInclude Include="CityObj.h" />
+    <ClInclude Include="CityView.h" />
+    <ClInclude Include="City_Econ.h" />
+    <ClInclude Include="Grid.h" />
+    <ClInclude Include="GridCell.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="ToolBox.h" />
+    <ClInclude Include="ToolWindow.h" />
+    <ClInclude Include="type.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bighouse00001.bmp" />
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\bmp00001.bmp" />
+    <Image Include="res\bmp00002.bmp" />
+    <Image Include="res\bmp00003.bmp" />
+    <Image Include="res\bmp00004.bmp" />
+    <Image Include="res\bmp00005.bmp" />
+    <Image Include="res\bmp00006.bmp" />
+    <Image Include="res\bmp00007.bmp" />
+    <Image Include="res\bmp00008.bmp" />
+    <Image Include="res\business0001.bmp" />
+    <Image Include="res\City.ico" />
+    <Image Include="res\CityDoc.ico" />
+    <Image Include="res\condo00001.bmp" />
+    <Image Include="res\HIRISE0001.bmp" />
+    <Image Include="res\HOUSE0002.bmp" />
+    <Image Include="res\road_1.bmp" />
+    <Image Include="res\store00001.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="City.clw" />
+    <None Include="City.ncb" />
+    <None Include="City.opt" />
+    <None Include="City.plg" />
+    <None Include="City.reg" />
+    <None Include="res\City.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="City.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
